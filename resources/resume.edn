@@ -9,50 +9,50 @@
  :sections
  [{:name "Employment"
    :items
-   [{:header "Rivalfox"
+   [{:header "Paul S. Chun"
+     :subheader "Consultant"
+     :items
+     ["Revant Optics - Volusion (JavaScript), 2012"
+      "RealLead - Ruby on Rails, 2012"
+      "ASU Travel Guide - PHP + ColdFusion, 2008"
+      "Autodesk - Ruby on Rails, 2007"]
+     :metadata-header "Various Locations"
+     :metadata-subheader "May 2007 - Present"}
+
+    {:header "Rivalfox"
      :subheader "CTO, Co-Founder"
      :items
      ["Responsible for product strategy, management and development."]
      :metadata-header "Berlin, Germany"
      :metadata-subheader "April 2013 - September 2016"}
 
-  {:header "Heyzap"
-   :subheader "Software Engineer"
-   :items
-   ["Created APIs and assisted in partner integrations."
-    "Joined as the second full-time hire after company received seed funding."]
-   :metadata-header "San Francisco, California"
-   :metadata-subheader "April 2009 - July 2011"}
-
-  {:header "Paul S. Chun"
-   :subheader "Consultant"
-   :items
-   ["Revant Optics - Volusion (JavaScript), 2012"
-    "RealLead - Ruby on Rails, 2012"
-    "ASU Travel Guide - PHP + ColdFusion, 2008"
-    "Autodesk - Ruby on Rails, 2007"]
-   :metadata-header "Various Locations"
-   :metadata-subheader "May 2007 - Present"}]}
+    {:header "Heyzap"
+     :subheader "Software Engineer"
+     :items
+     ["Created APIs and assisted in partner integrations."
+      "Joined as the second full-time hire after company received seed funding."]
+     :metadata-header "San Francisco, California"
+     :metadata-subheader "April 2009 - July 2011"}]}
 
   {:name "Education"
    :items
    [{:header "University of Oregon"
-   :subheader "Master of Business Administration"
-   :subnote "Specialization in Entrepreneurship"
-   :metadata-header "Eugene, Oregon"
-   :metadata-subheader "September 2011 - March 2013"}
+     :subheader "Master of Business Administration"
+     :subnote "Specialization in Entrepreneurship"
+     :metadata-header "Eugene, Oregon"
+     :metadata-subheader "September 2011 - March 2013"}
 
-  {:header "Purdue University"
-   :subheader "Bachelor of Science, Mathematics"
-   :subnote "Minor in Computer Science"
-   :metadata-header "West Lafayette, Indiana"
-   :metadata-subheader "August 2004 - May 2008"}
+    {:header "Purdue University"
+     :subheader "Bachelor of Science, Mathematics"
+     :subnote "Minor in Computer Science"
+     :metadata-header "West Lafayette, Indiana"
+     :metadata-subheader "August 2004 - May 2008"}
 
-  {:header "Seoul National University"
-   :subheader "Korean Language Certification"
-   :subnote "Certification, Level 2"
-   :metadata-header "Seoul, South Korea"
-   :metadata-subheader "November 2008 - May 2009"}]}
+    {:header "Seoul National University"
+     :subheader "Korean Language Certification"
+     :subnote "Certification, Level 2"
+     :metadata-header "Seoul, South Korea"
+     :metadata-subheader "November 2008 - May 2009"}]}
 
   {:name "Skills"
    :lists
