@@ -11,16 +11,29 @@
 
 (def short-date (f/formatter "MMM d, yyyy"))
 
+(defn google-analytics
+  ""
+  []
+  [:script
+   "(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-67228281-1', 'auto');
+      ga('send', 'pageview');"])
+
 (defn slug-path [slug] (str "/" slug "/"))
 
 (defn timestamp-to-string [ts] (f/unparse short-date (c/from-long (* 1000 (Long/parseLong ts)))))
 
 (defn render-with-layout
   "Render a page with the shared layout."
-  [content]
+  [title content]
   (html5
    {:lang "en"}
    [:head
+    (google-analytics)
+    [:title title]
     (include-css "https://fonts.googleapis.com/css?family=Catamaran:200")
     (include-css "/css/main.css")]
    [:body
@@ -31,24 +44,29 @@
 
 (defn blog-post
   "The layout for a blog post."
-  [next-post {:keys [title posted_at location content]} prev-post]
-  (render-with-layout
+  [next-post
+   {:keys [title posted_at location content]}
+   prev-post
+   {:keys [name description]}]
+  (render-with-layout (str name " &mdash; " title)
    [:div {:class "blog-post"}
     [:h1 title]
     [:div {:class "metadata"}
      [:div (timestamp-to-string posted_at)]
-     [:div location]
-     [:div "Paul S. Chun"]]
+     [:div location]]
     [:div {:class "body"} (to-hiccup (mp content))]
-    (if next-post
+    [:div {:class "boilerplate"}
+     [:p "Author: " name]
+     [:p description]
+         (if next-post
       [:div
-       "Next Post: "
+       "Newer Post: "
        [:a {:href (slug-path (:slug next-post))} (:title next-post)]])
     (if prev-post
       [:div
-       "Previous Post: "
+       "Older Post: "
        [:a {:href (slug-path (:slug prev-post))} (:title prev-post)]])
-    [:div [:a {:href "/"} "Go Back Home"]]]))
+     [:div [:a {:href "/"} "Home"]]]]))
 
 (defn blog-post-link
   "Links on the homepage to the actual blog post."
@@ -59,27 +77,30 @@
 
 (defn home
   "The homepage."
-  [blog-posts]
-  (render-with-layout
+  [blog-posts
+   {:keys [name email description looking-for-projects?]}
+   nav-data]
+  (render-with-layout name
    [:div {:class "homepage"}
     [:header
-     [:h1 "Paul S. Chun"]
-     [:img {:src (gravatar-url "paul@sixofhearts.us")}]
-     [:p "Berlin-based software jack-of-all-trades. Building great software with great people. Formerly founded Rivalfox, previously worked at Heyzap."]
+     [:h1 name]
+     [:img {:src (gravatar-url email)}]
+     [:p description]
      [:p
       "I currently "
-      [:span {:class "not looking-for"} "am not"]
+      (if looking-for-projects?
+        [:span {:class "looking-for"} "am"]
+        [:span {:class "not looking-for"} "am not"])
       " accepting proposals for new projects."]]
     [:nav
      [:ul {:class "fixed-nav"}
       [:li
-       [:a {:href "/resume"} "Résumé"]
+       [:a {:href "/resume"} "R&#0233;sum&#0233;"]
        [:span " / "]
        [:a {:href "/cv"} "CV"]]
-      [:li [:a {:href "https://www.twitter.com/sixofhearts"} "Twitter"]]
-      [:li [:a {:href "https://www.linkedin.com/in/paulschun"} "LinkedIn"]]
-      [:li [:a {:href "https://github.com/sixofhearts"} "GitHub"]]
-      [:li [:a {:href "mailto:paul@sixofhearts.us"} "Email"]]]
+      (map
+       (fn [{:keys [name link]}] [:li [:a {:href link :target "_blank"} name]])
+       nav-data)]
      [:ul {:class "blog-nav"}
       (map (fn [bp] [:li (blog-post-link bp)]) blog-posts)]]
     ]))

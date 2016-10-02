@@ -14,7 +14,9 @@
   "target/build")
 
 (defn get-assets []
-  (assets/load-assets "public" ["/css/main.scss"]))
+  (assets/load-assets "public" ["/css/main.scss"
+                                "/css/resume.scss"
+                                "/images/portrait.jpg"]))
 
 (def app
   "Server"

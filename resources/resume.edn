@@ -1,0 +1,98 @@
+{:bio {:name "Paul S. Chun"
+       :portrait "/images/portrait.jpg"
+       :lines
+       ["Residence: Berlin, Germany"
+        "Born January 6, 1986 in Stockton, California, United States of America"
+        "Citizenship: United States of America"
+        "Marital Status: Single"]}
+
+ :sections
+ [{:name "Employment"
+   :items
+   [{:header "Rivalfox"
+     :subheader "CTO, Co-Founder"
+     :items
+     ["Responsible for product strategy, management and development."]
+     :metadata-header "Berlin, Germany"
+     :metadata-subheader "April 2013 - September 2016"}
+
+  {:header "Heyzap"
+   :subheader "Software Engineer"
+   :items
+   ["Created APIs and assisted in partner integrations."
+    "Joined as the second full-time hire after company received seed funding."]
+   :metadata-header "San Francisco, California"
+   :metadata-subheader "April 2009 - July 2011"}
+
+  {:header "Paul S. Chun"
+   :subheader "Consultant"
+   :items
+   ["Revant Optics - Volusion (JavaScript), 2012"
+    "RealLead - Ruby on Rails, 2012"
+    "ASU Travel Guide - PHP + ColdFusion, 2008"
+    "Autodesk - Ruby on Rails, 2007"]
+   :metadata-header "Various Locations"
+   :metadata-subheader "May 2007 - Present"}]}
+
+  {:name "Education"
+   :items
+   [{:header "University of Oregon"
+   :subheader "Master of Business Administration"
+   :subnote "Specialization in Entrepreneurship"
+   :metadata-header "Eugene, Oregon"
+   :metadata-subheader "September 2011 - March 2013"}
+
+  {:header "Purdue University"
+   :subheader "Bachelor of Science, Mathematics"
+   :subnote "Minor in Computer Science"
+   :metadata-header "West Lafayette, Indiana"
+   :metadata-subheader "August 2004 - May 2008"}
+
+  {:header "Seoul National University"
+   :subheader "Korean Language Certification"
+   :subnote "Certification, Level 2"
+   :metadata-header "Seoul, South Korea"
+   :metadata-subheader "November 2008 - May 2009"}]}
+
+  {:name "Skills"
+   :lists
+   [{:header "Technical Skills"
+     :sublists
+     [{:name "Project Management Methodologies"
+       :values ["Scrum"
+                "Kanban"]}
+
+      {:name "Preferred Technologies"
+       :values ["Clojure"
+                "ClojureScript"
+                "Couchbase Server"
+                "PostgreSQL"
+                "Ruby"
+                "Sinatra"
+                "SASS"
+                "React.js"
+                "Ubuntu"
+                "Chef"
+                "Mac OS X"
+                "D"]}
+
+      {:name "Other Technologies"
+       :values ["Rails"
+                "JavaScript"
+                "HTML"
+                "CSS"
+                "openSUSE"
+                "PHP"
+                "Windows"
+                "Adobe Photoshop"
+                "Microsoft Office"
+                "GIMP"
+                "MongoDB"
+                "MySQL"
+                "Sketch"]}
+
+      {:name "Human Languages"
+       :values ["English (native)"
+                "Korean (beginniner)"
+                "Mandarin Chinese (beginner)"
+                "German (beginner)"]}]}]}]}
