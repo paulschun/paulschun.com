@@ -6,13 +6,13 @@
 
 (def long-date-formatter (f/formatter "EEEE, MMMM d, yyyy"))
 
-(defn blog-post-content [{:keys [title posted_at location content]}]
+(defn blog-post-content [{:keys [title posted_at location body]}]
   [:div
    [:h1 title]
    [:div {:class "metadata"}
     [:div (long-date posted_at)]
     [:div location]]
-   [:div {:class "body"} (to-hiccup (mp content))]])
+   [:div {:class "body"} (to-hiccup (mp body))]])
 
 (defn breadcrumb [{:keys [name description]}]
   [:div

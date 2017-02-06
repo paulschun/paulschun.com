@@ -14,7 +14,8 @@
                  [clj-http "3.3.0"]
                  [clj-time "0.12.0"]
                  [digest "1.4.5"]
-                 [endophile "0.1.2"]]
+                 [endophile "0.1.2"]
+                 [frontmatter "0.0.1"]]
   :plugins [[lein-ring "0.9.7"]]
   :ring {:handler twist-of-carts.core/app}
   :aliases {"build-site" ["run" "-m" "twist-of-carts.core/export"]})

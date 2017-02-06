@@ -15,7 +15,7 @@
 
 (defn ts-to-date-format [ts date-format]
   (let [formatter (f/formatter (date-format custom-formatters))
-        time (c/from-long (* 1000 (Long/parseLong ts)))]
+        time (f/parse (f/formatters :date-time-no-ms) ts)]
     (f/unparse formatter time)))
 
 (defn long-date [ts]
