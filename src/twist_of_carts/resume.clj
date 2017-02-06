@@ -5,7 +5,7 @@
             [clj-time.coerce :as c]
             [clojure.edn :as edn]
             [clojure.string :as str]
-            [twist-of-carts.views :refer [google-analytics]]
+            [twist-of-carts.layout :refer [google-analytics]]
             [digest :as digest]))
 
 (defn sec-item [{:keys [header subheader items subnote
