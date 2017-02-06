@@ -12,7 +12,7 @@
       ga('create', 'UA-67228281-1', 'auto');
       ga('send', 'pageview');"])
 
-(defn render-with-layout
+(defn page-layout
   "Render a page with the shared layout."
   [{title :title, content :content}]
   (html5
@@ -25,7 +25,7 @@
    [:body
     [:div {:class "container"} content]]))
 
-(defn render-with-cv-layout
+(defn cv-layout
   "Render a page with the shared layout."
   [{title :title, content :content}]
   (html5

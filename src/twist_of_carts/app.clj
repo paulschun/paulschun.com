@@ -1,7 +1,6 @@
-(ns twist-of-carts.app
+ (ns twist-of-carts.app
   (:require [twist-of-carts.views :as views]
             [twist-of-carts.util :refer [slug-path]]
-            [twist-of-carts.resume :as res]
             [clojure.data.csv :as csv]
             [clj-http.client :as client]))
 
@@ -37,8 +36,9 @@
   "Get routes for this blog."
   []
   (let [blog-posts (reverse (sort-by :posted_at (turn-csv-into-maps (slurp file-loc))))
-        author-data (read-string (slurp "resources/author.edn"))]
-    (merge {"/" (views/home blog-posts author-data)}
-           (blog-post-routes blog-posts author-data)
-           ;;(res/get-pages)
-           )))
+        author-data (read-string (slurp "resources/author.edn"))
+        resume-data (read-string (slurp "resources/resume.edn"))]
+    (merge {"/" (views/home blog-posts author-data)
+            "/resume/" (views/resume resume-data)
+            "/cv/" (views/cv resume-data)}
+           (blog-post-routes blog-posts author-data))))
