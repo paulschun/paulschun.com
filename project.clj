@@ -10,8 +10,6 @@
                  [hiccup "1.0.5"]
                  [optimus "0.19.0"]
                  [optimus-sass "0.0.3"]
-                 [com.outpace/data.csv "0.1.3"]
-                 [clj-http "3.3.0"]
                  [clj-time "0.12.0"]
                  [digest "1.4.5"]
                  [endophile "0.1.2"]
