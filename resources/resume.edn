@@ -12,24 +12,26 @@
    [{:header "Paul S. Chun"
      :subheader "Consultant"
      :items
-     ["Revant Optics - Volusion (JavaScript), 2012"
-      "RealLead - Ruby on Rails, 2012"
-      "ASU Travel Guide - PHP + ColdFusion, 2008"
-      "Autodesk - Ruby on Rails, 2007"]
+     ["Business Strategy: Frequency Precision (2016), Revant Optics (2012)"
+      "Development: RealLead (Ruby on Rails, 2012), Autodesk (Ruby on Rails, 2007)"]
      :metadata-header "Various Locations"
      :metadata-subheader "May 2007 - Present"}
 
     {:header "Rivalfox"
      :subheader "CTO, Co-Founder"
      :items
-     ["Responsible for product strategy, management and development."]
+     ["Assembled an engineering team on a Ruby on Rails stack and led development."
+      "Architected systems and software utilizing AWS and Google Cloud technologies."
+      "Transitioned from Rails to three tier web application with React."
+      "Mentored and challenged employees to extend beyond their comfort zones and grow."]
      :metadata-header "Berlin, Germany"
      :metadata-subheader "April 2013 - September 2016"}
 
     {:header "Heyzap"
-     :subheader "Software Engineer"
+     :subheader "Full Stack Software Engineer"
      :items
-     ["Created APIs and assisted in partner integrations."
+     ["Developed APIs and standalone products with Ruby on Rails and JavaScript."
+      "Led efforts in partner integrations on site and post-integration support."
       "Joined as the second full-time hire after company received seed funding."]
      :metadata-header "San Francisco, California"
      :metadata-subheader "April 2009 - July 2011"}]}
