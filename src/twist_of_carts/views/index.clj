@@ -33,6 +33,7 @@
    (fixed-nav-item "Twitter" (str "https://www.twitter.com/" twitter-handle) true)
    (fixed-nav-item "LinkedIn" (str "https://www.linkedin.com/in/" linkedin-id) true)
    (fixed-nav-item "GitHub" (str "https://github.com/" github-id) true)
+   (fixed-nav-item "Write Honey" "https://writehoney.com/" true)
    (fixed-nav-item "Email" (str "mailto:" email))])
 
 (defn blog-nav [blog-posts]

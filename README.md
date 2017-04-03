@@ -1,10 +1,13 @@
-# twist-of-carts
+# Twist of Carts
 
-A Clojure library designed to ... well, that part is up to you.
+The homepage of [Paul S. Chun](http://sixofhearts.us/). A bit about me, my availability, and projects I worked on, such as [Write Honey](https://writehoney.com/).
 
 ## Usage
 
-FIXME
+```
+lein deps
+lein ring server-headless
+```
 
 ## License
 
