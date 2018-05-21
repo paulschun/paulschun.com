@@ -37,19 +37,19 @@
      :metadata-subheader "April 2009 - July 2011"}]}
   {:name "Leadership"
    :items
-   [{:header "Berlin Korean Language Meetup"
-     :subheader "Organizer"
-     :items ["Took over inactive meetup group and turned into group nominated as a top group by Meetup.com."
-             "Participated in the Meetup.com Pilot Program as a top organizer."]
-     :metadata-header "Berlin, Germany"
-     :metadata-subheader "March 2017 - Present"}
-
-    {:header "Write Honey"
+   [{:header "Write Honey"
      :subheader "Creator & Maintainer"
      :items ["Planned, designed, built and marketed a popular web application alone."
              "Built a custom back end with Component, and the front end with Re-frame."]
      :metadata-header "Berlin, Germany"
-     :metadata-subheader "December 2016 - Present"}]}
+     :metadata-subheader "December 2016 - Present"}
+
+    {:header "Berlin Korean Language Meetup"
+     :subheader "Organizer"
+     :items ["Took over inactive meetup group and turned into group nominated as a top group by Meetup.com."
+             "Participated in the Meetup.com Pilot Program as a top organizer."]
+     :metadata-header "Berlin, Germany"
+     :metadata-subheader "March 2017 - Present"}]}
 
   {:name "Education"
    :items
