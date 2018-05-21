@@ -13,7 +13,7 @@
      :subheader "Consultant"
      :items
      ["Business Strategy: Frequency Precision (2016), Revant Optics (2012)"
-      "Development: RealLead (Ruby on Rails, 2012), Autodesk (Ruby on Rails, 2007)"]
+      "Development: Golden Recursion (Python, 2017-current), RealLead (Ruby on Rails, 2012), Autodesk (Ruby on Rails, 2007)"]
      :metadata-header "Various Locations"
      :metadata-subheader "May 2007 - Present"}
 
@@ -35,36 +35,41 @@
       "Joined as the second full-time hire after company received seed funding."]
      :metadata-header "San Francisco, California"
      :metadata-subheader "April 2009 - July 2011"}]}
+  {:name "Leadership"
+   :items
+   [{:header "Berlin Korean Language Meetup"
+     :subheader "Organizer"
+     :items ["Took over inactive meetup group and turned into group nominated as a top group by Meetup.com."
+             "Participated in the Meetup.com Pilot Program as a top organizer."]
+     :metadata-header "Berlin, Germany"
+     :metadata-subheader "March 2017 - Present"}
+
+    {:header "Write Honey"
+     :subheader "Creator & Maintainer"
+     :items ["Planned, designed, built and marketed a popular web application alone."
+             "Built a custom back end with Component, and the front end with Re-frame."]
+     :metadata-header "Berlin, Germany"
+     :metadata-subheader "December 2016 - Present"}]}
 
   {:name "Education"
    :items
    [{:header "University of Oregon"
      :subheader "Master of Business Administration"
      :subnote "Specialization in Entrepreneurship"
-     :metadata-header "Eugene, Oregon"
+     :metadata-header "Eugene, Oregon, United States"
      :metadata-subheader "September 2011 - March 2013"}
 
     {:header "Purdue University"
      :subheader "Bachelor of Science, Mathematics"
      :subnote "Minor in Computer Science"
-     :metadata-header "West Lafayette, Indiana"
-     :metadata-subheader "August 2004 - May 2008"}
-
-    {:header "Seoul National University"
-     :subheader "Korean Language Certification"
-     :subnote "Certification, Level 2"
-     :metadata-header "Seoul, South Korea"
-     :metadata-subheader "November 2008 - May 2009"}]}
+     :metadata-header "West Lafayette, Indiana, United States"
+     :metadata-subheader "August 2004 - May 2008"}]}
 
   {:name "Skills"
    :lists
    [{:header "Technical Skills"
      :sublists
-     [{:name "Project Management Methodologies"
-       :values ["Scrum"
-                "Kanban"]}
-
-      {:name "Preferred Technologies"
+     [{:name "Preferred Technologies"
        :values ["Clojure"
                 "ClojureScript"
                 "Couchbase Server"
@@ -95,6 +100,6 @@
 
       {:name "Human Languages"
        :values ["English (native)"
-                "Korean (beginner)"
-                "Mandarin Chinese (beginner)"
-                "German (beginner)"]}]}]}]}
+                "German (conversational)"
+                "Korean (Seoul National University Certification, Level 2)"
+                "Mandarin Chinese (beginner)"]}]}]}]}
