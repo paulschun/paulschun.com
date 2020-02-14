@@ -10,12 +10,20 @@
  [{:name "Employment"
    :items
    [{:header "Paul S. Chun"
-     :subheader "Consultant"
+     :subheader "Business, Technical Strategy &amp; Software Development Consultant"
      :items
-     ["Business Strategy: Frequency Precision (2016), Revant Optics (2012)"
-      "Development: Golden Recursion (Python, 2017-current), RealLead (Ruby on Rails, 2012), Autodesk (Ruby on Rails, 2007)"]
+     ["Recent Clients: Anonymous Berlin-based publishing company (Ruby/Padrino, Berlin), Frequency Precision (Clojure, London), RealLead (Ruby/Rails, Eugene, Oregon)"]
      :metadata-header "Various Locations"
      :metadata-subheader "May 2007 - Present"}
+
+    {:header "Golden"
+     :subheader "Lead Software Architect"
+     :items
+     ["Inspected company goals and optimized database relations to help it scale."
+      "Improved web application requests served by 1000% via optimization of existing code and new technology implementation."
+      "Created tooling around data manipulation and importing to Golden's public-facing pages."]
+     :metadata-header "Remote"
+     :metadata-subheader "July 2017 - July 2019"}
 
     {:header "Rivalfox"
      :subheader "CTO, Co-Founder"
@@ -35,11 +43,11 @@
       "Joined as the second full-time hire after company received seed funding."]
      :metadata-header "San Francisco, California"
      :metadata-subheader "April 2009 - July 2011"}]}
-  {:name "Leadership"
+  {:name "Community"
    :items
    [{:header "Write Honey"
      :subheader "Creator & Maintainer"
-     :items ["Planned, designed, built and marketed a popular web application alone."
+     :items ["Singlehandedly planned, designed, built and marketed a popular web application in Clojure and ClojureScript."
              "Built a custom back end with Component, and the front end with Re-frame."]
      :metadata-header "Berlin, Germany"
      :metadata-subheader "December 2016 - Present"}
@@ -70,24 +78,25 @@
    [{:header "Technical Skills"
      :sublists
      [{:name "Preferred Technologies"
-       :values ["Clojure"
+       :values ["AWS"
+                "Terraform"
+                "Ansible"
+                "DigitalOcean"
+                "Clojure"
                 "ClojureScript"
-                "Couchbase Server"
+                "Python (Django, Flask)"
+                "Ruby (Rails, Sinatra, Padrino)"
                 "PostgreSQL"
-                "Ruby"
-                "Sinatra"
-                "SASS"
-                "React.js"
+                "React"
                 "Ubuntu"
-                "Chef"
-                "Mac OS X"
-                "D"]}
+                "macOS"]}
 
       {:name "Other Technologies"
-       :values ["Rails"
+       :values ["D"
                 "JavaScript"
                 "HTML"
                 "CSS"
+                "SASS"
                 "openSUSE"
                 "PHP"
                 "Windows"
@@ -96,7 +105,8 @@
                 "GIMP"
                 "MongoDB"
                 "MySQL"
-                "Sketch"]}
+                "Sketch"
+                "Chef"]}
 
       {:name "Human Languages"
        :values ["English (native)"

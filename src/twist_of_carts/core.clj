@@ -6,7 +6,6 @@
             [optimus.optimizations :as optimizations]
             [optimus.strategies :refer [serve-live-assets]]
             [optimus.export]
-            [optimus-sass.core]
             [twist-of-carts.app :refer [get-pages]]))
 
 (def target-dir
@@ -14,8 +13,9 @@
   "target/build")
 
 (defn get-assets []
-  (assets/load-assets "public" ["/css/main.scss"
-                                "/css/resume.scss"
+  (assets/load-assets "public" ["/css/main.css"
+                                "/css/resume.css"
+                                "/js/main.js"
                                 "/images/portrait.jpg"]))
 
 (def app
