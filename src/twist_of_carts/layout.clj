@@ -63,16 +63,16 @@
          [:a.navbar-item {:href "mailto:paul@sixofhearts.us"}
           [:i.fa.fa-envelope]
           [:span "&nbsp;Email"]]
-         [:a.navbar-item {:href "https://www.twitter.com/paulschun" :target "_blank"}
+         [:a.navbar-item {:href "https://www.twitter.com/paulschun" :target "_blank" :rel "me nofollow"}
           [:i.fab.fa-twitter]
           [:span "&nbsp;Twitter"]]
-         [:a.navbar-item {:href "https://www.linkedin.com/in/paulschun" :target "_blank"}
+         [:a.navbar-item {:href "https://www.linkedin.com/in/paulschun" :target "_blank" :rel "me nofollow"}
           [:i.fab.fa-linkedin]
           [:span "&nbsp;LinkedIn"]]
-         [:a.navbar-item {:href "https://angel.co/paulschun" :target "_blank"}
+         [:a.navbar-item {:href "https://angel.co/paulschun" :target "_blank" :rel "me nofollow"}
           [:i.fab.fa-angellist]
           [:span "&nbsp;Angellist"]]
-         [:a.navbar-item {:href "https://www.github.com/sixofhearts" :target "_blank"}
+         [:a.navbar-item {:href "https://www.github.com/sixofhearts" :target "_blank" :rel "me nofollow"}
           [:i.fab.fa-github]
           [:span "&nbsp;GitHub"]]
         ]]]

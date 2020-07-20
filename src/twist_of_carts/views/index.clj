@@ -46,6 +46,8 @@
                [:div.container
                 [:img {:src (gravatar-url email)}]
                 [:h1.title "Paul S. Chun"]
-                [:h2.subtitle "I create, work on and advise startups that care about making useful and rock-solid products."]
+                [:h2.subtitle "Founder and CEO of "
+                 [:a {:href "https://elbower.com/"} "Elbower"]]
+                [:h2.subtitle "Founder and CEO of I create, work on and advise startups that care about making useful and rock-solid products."]
                 ]]]
              ]})
